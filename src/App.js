@@ -1,12 +1,16 @@
 import './App.css'
 import Header from './Components/Header'
 import Sidebar from './Components/Sidebar'
+import Feed from './Components/Feed'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <Sidebar />
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+      </div>
     </div>
   )
 }
